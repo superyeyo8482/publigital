@@ -1,8 +1,8 @@
-# Publidigital — Sitio web oficial
+# Publigital — Sitio web oficial
 
-Landing page de **Publidigital**, agencia de videos publicitarios con inteligencia artificial para micronegocios, pymes y emprendedores de **Toluca, Metepec y zona metropolitana**.
+Landing page de **Publigital**, agencia de videos publicitarios con inteligencia artificial para micronegocios, pymes y emprendedores de **Toluca, Metepec y zona metropolitana**.
 
-🌐 **Sitio publicado:** https://superyeyo8482.github.io/publidigital/
+🌐 **Sitio publicado:** https://superyeyo8482.github.io/publigital/
 
 ---
 
@@ -36,15 +36,15 @@ Landing page de **Publidigital**, agencia de videos publicitarios con inteligenc
 ## Estructura de archivos
 
 ```
-publidigital/
-├── index.html                    ← Todo el sitio (HTML + CSS + JS)
-├── README.md                     ← Este archivo
-├── logo.png                      ← Logotipo
-├── poster.jpg                    ← Portada del video (generada con ffmpeg)
-├── promo_publidigital_web.mp4    ← Video promocional optimizado (720×1280, 9.6 MB)
-├── promo_publidigital.mp4        ← Video original 1080×1920 (42 MB, NO se sube al repo)
-├── contacto.txt                  ← Nota interna (NO se sube al repo)
-├── .nojekyll                     ← Evita el procesado de Jekyll en GitHub Pages
+publigital/
+├── index.html                  ← Todo el sitio (HTML + CSS + JS)
+├── README.md                   ← Este archivo
+├── logo.png                    ← Logotipo
+├── poster.jpg                  ← Portada del video (generada con ffmpeg)
+├── promo_publigital_web.mp4    ← Video promocional optimizado (540×960, 4.8 MB)
+├── promo_publigital.mp4        ← Video original 1080×1920 (42 MB, NO se sube al repo)
+├── contacto.txt                ← Nota interna (NO se sube al repo)
+├── .nojekyll                   ← Evita el procesado de Jekyll en GitHub Pages
 └── .gitignore
 ```
 
@@ -52,21 +52,21 @@ publidigital/
 
 | Archivo | Resolución | Peso | ¿Va al repo? |
 |---|---|---|---|
-| `promo_publidigital.mp4` | 1080×1920 | 41.7 MB | ❌ No (excluido por `.gitignore`) |
-| `promo_publidigital_web.mp4` | 720×1280 | 9.6 MB | ✅ Sí (el que usa el sitio) |
+| `promo_publigital.mp4` | 1080×1920 | 41.7 MB | ❌ No (excluido por `.gitignore`) |
+| `promo_publigital_web.mp4` | 540×960 | 4.8 MB | ✅ Sí (el que usa el sitio) |
 
-El original en alta se conserva en tu computadora por si algún día lo necesitas para otro uso (por ejemplo, subirlo a YouTube o a un anuncio pagado). La versión web es la que se muestra en la página: se ve nítida en pantallas de celular y carga **4 veces más rápido**.
+El original en alta se conserva en tu computadora por si algún día lo necesitas para otro uso (por ejemplo, subirlo a YouTube o a un anuncio pagado). La versión web es la que se muestra en la página: pesa **casi 9 veces menos** y se ve nítida, porque el reproductor se muestra a 310 px de ancho como máximo.
 
 Si quieres regenerar la versión web después de editar el video original:
 
 ```bash
-ffmpeg -y -i promo_publidigital.mp4 \
-  -c:v libx264 -preset medium -crf 28 \
-  -vf "scale=720:1280" \
-  -profile:v high -level 4.0 -pix_fmt yuv420p \
-  -c:a aac -b:a 96k -ac 2 \
+ffmpeg -y -i promo_publigital.mp4 \
+  -c:v libx264 -preset slow -crf 30 -r 24 \
+  -vf "scale=540:960" \
+  -profile:v main -level 3.1 -pix_fmt yuv420p \
+  -c:a aac -b:a 64k -ac 1 \
   -movflags +faststart \
-  promo_publidigital_web.mp4
+  promo_publigital_web.mp4
 ```
 
 El video se carga con `preload="none"`, así que **no consume datos del visitante hasta que presiona reproducir**. Eso mantiene la página ligera aunque el video sea grande.
@@ -175,4 +175,4 @@ GitHub Pages reconstruye el sitio automáticamente en **1 o 2 minutos**. Recarga
 
 ---
 
-© Publidigital. Todos los derechos reservados.
+© Publigital. Todos los derechos reservados.

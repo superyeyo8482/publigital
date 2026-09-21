@@ -1,0 +1,12 @@
+# Archivos internos que no deben publicarse en el sitio
+contacto.txt
+
+# Video original en alta calidad (42 MB).
+# El sitio usa promo_publidigital_web.mp4, la version optimizada de 720x1280,
+# que pesa mucho menos y carga rapido en telefonos celulares.
+promo_publidigital.mp4
+
+# Archivos del sistema
+Thumbs.db
+desktop.ini
+.DS_Store

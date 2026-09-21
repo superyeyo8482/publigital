@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publidigital | Videos publicitarios con IA en Toluca y Metepec</title>
+<meta name="description" content="Creamos videos publicitarios con inteligencia artificial para micronegocios, pymes y emprendedores. Sin cámara ni equipo de producción. Entrega en 2 días. Desde $250 MXN.">
+<meta name="keywords" content="videos publicitarios, inteligencia artificial, Toluca, Metepec, publicidad para negocios, video con IA, marketing digital">
+<meta name="author" content="Publidigital">
+<meta name="theme-color" content="#0a0a1a">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph / Redes sociales -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Publidigital | Videos publicitarios con IA">
+<meta property="og:description" content="Videos terminados y listos para publicar. Sin cámara ni equipo de producción. Entrega en 2 días.">
+<meta property="og:image" content="poster.jpg">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Publidigital | Videos publicitarios con IA">
+<meta name="twitter:description" content="Videos terminados y listos para publicar. Entrega en 2 días.">
+<meta name="twitter:image" content="poster.jpg">
+
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="apple-touch-icon" href="logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<!-- Datos estructurados para SEO local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Publidigital",
+  "description": "Agencia de videos publicitarios con inteligencia artificial para micronegocios, pymes y emprendedores.",
+  "image": "logo.png",
+  "telephone": "+525546539933",
+  "priceRange": "$250 - $400 MXN",
+  "areaServed": [
+    { "@type": "City", "name": "Toluca" },
+    { "@type": "City", "name": "Metepec" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Toluca",
+    "addressRegion": "Estado de México",
+    "addressCountry": "MX"
+  },
+  "makesOffer": [
+    { "@type": "Offer", "name": "Video publicitario 30 segundos", "price": "250", "priceCurrency": "MXN" },
+    { "@type": "Offer", "name": "Video publicitario 60 segundos", "price": "350", "priceCurrency": "MXN" },
+    { "@type": "Offer", "name": "Video publicitario 90 segundos", "price": "400", "priceCurrency": "MXN" }
+  ]
+}
+</script>
+
+<style>
+/* ============================================================
+   PUBLIDIGITAL — Hoja de estilos
+   Paleta: fondo #0a0a1a | dorado #c9a84c | azul #00d4ff
+   ============================================================ */
+
+:root{
+  --bg:            #0a0a1a;
+  --bg-soft:       #0e0e22;
+  --bg-card:       rgba(255,255,255,.032);
+  --bg-card-hover: rgba(255,255,255,.055);
+
+  --gold:          #c9a84c;
+  --gold-light:    #e8cf82;
+  --gold-dark:     #8f7430;
+  --blue:          #00d4ff;
+  --blue-dark:     #0096b8;
+
+  --text:          #eef0f6;
+  --text-muted:    #9aa2ba;
+  --text-dim:      #6d7590;
+
+  --border:        rgba(255,255,255,.085);
+  --border-gold:   rgba(201,168,76,.30);
+  --border-blue:   rgba(0,212,255,.28);
+
+  --radius:        18px;
+  --radius-sm:     12px;
+  --radius-lg:     28px;
+
+  --shadow:        0 24px 60px -18px rgba(0,0,0,.75);
+  --shadow-blue:   0 18px 46px -14px rgba(0,212,255,.42);
+  --shadow-gold:   0 18px 46px -14px rgba(201,168,76,.36);
+
+  --maxw:          1180px;
+  --pad-section:   clamp(68px, 9vw, 124px);
+
+  --ease:          cubic-bezier(.22,.9,.3,1);
+}
+
+*,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+
+html{ scroll-behavior:smooth; scroll-padding-top:90px; -webkit-text-size-adjust:100%; }
+
+body{
+  font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Fondo decorativo global */
+body::before{
+  content:'';
+  position:fixed; inset:0;
+  background:
+    radial-gradient(ellipse 80% 55% at 12% -8%,  rgba(201,168,76,.13), transparent 60%),
+    radial-gradient(ellipse 75% 50% at 92% 8%,   rgba(0,212,255,.11),  transparent 60%),
+    radial-gradient(ellipse 90% 60% at 50% 108%, rgba(201,168,76,.07), transparent 62%);
+  pointer-events:none;
+  z-index:0;
+}
+/* Retícula sutil */
+body::after{
+  content:'';
+  position:fixed; inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.021) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.021) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 100% 70% at 50% 0%, #000 20%, transparent 75%);
+  -webkit-mask-image:radial-gradient(ellipse 100% 70% at 50% 0%, #000 20%, transparent 75%);
+  pointer-events:none;
+  z-index:0;
+}
+
+img,video{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul{ list-style:none; }
+
+h1,h2,h3,h4{ line-height:1.14; letter-spacing:-.025em; font-weight:800; }
+
+/* =====================  LAYOUT  ===================== */
+.container{ width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(18px,4vw,28px); position:relative; z-index:1; }
+
+section{ padding-block:var(--pad-section); position:relative; z-index:1; }
+
+.section-head{ text-align:center; max-width:760px; margin:0 auto clamp(44px,5.5vw,68px); }
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:9px;
+  font-size:.72rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gold);
+  border:1px solid var(--border-gold);
+  background:rgba(201,168,76,.07);
+  padding:7px 16px; border-radius:100px; margin-bottom:20px;
+}
+.eyebrow .dot{ width:6px; height:6px; border-radius:50%; background:var(--gold); box-shadow:0 0 10px var(--gold); animation:pulse 2.2s infinite; }
+@keyframes pulse{ 0%,100%{opacity:1; transform:scale(1);} 50%{opacity:.45; transform:scale(.78);} }
+
+.section-title{ font-size:clamp(2rem, 4.6vw, 3.15rem); margin-bottom:16px; }
+.section-sub{ color:var(--text-muted); font-size:clamp(1rem,1.55vw,1.1rem); }
+
+.grad-gold{ background:linear-gradient(115deg, var(--gold-light), var(--gold) 45%, var(--gold-dark)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.grad-blue{ background:linear-gradient(115deg, #7ce8ff, var(--blue) 50%, var(--blue-dark)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+/* =====================  BOTONES  ===================== */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  font-family:inherit; font-size:.95rem; font-weight:700; letter-spacing:-.01em;
+  padding:15px 30px; border-radius:100px; border:1px solid transparent;
+  cursor:pointer; transition:all .28s var(--ease); white-space:nowrap;
+  position:relative; overflow:hidden;
+}
+.btn svg{ width:19px; height:19px; flex-shrink:0; }
+
+.btn-primary{
+  background:linear-gradient(120deg, var(--blue), #00a8d4);
+  color:#04121a; box-shadow:var(--shadow-blue);
+}
+.btn-primary:hover{ transform:translateY(-3px); box-shadow:0 24px 56px -12px rgba(0,212,255,.62); }
+
+.btn-gold{
+  background:linear-gradient(120deg, var(--gold-light), var(--gold));
+  color:#1a1405; box-shadow:var(--shadow-gold);
+}
+.btn-gold:hover{ transform:translateY(-3px); box-shadow:0 24px 56px -12px rgba(201,168,76,.6); }
+
+.btn-ghost{
+  background:rgba(255,255,255,.04); color:var(--text);
+  border-color:var(--border); backdrop-filter:blur(10px);
+}
+.btn-ghost:hover{ background:rgba(255,255,255,.09); border-color:var(--border-blue); transform:translateY(-3px); }
+
+.btn-wa{ background:linear-gradient(120deg,#25D366,#128C7E); color:#fff; box-shadow:0 18px 46px -14px rgba(37,211,102,.45); }
+.btn-wa:hover{ transform:translateY(-3px); box-shadow:0 24px 56px -12px rgba(37,211,102,.6); }
+
+.btn-tg{ background:linear-gradient(120deg,#2AABEE,#229ED9); color:#fff; box-shadow:0 18px 46px -14px rgba(42,171,238,.45); }
+.btn-tg:hover{ transform:translateY(-3px); box-shadow:0 24px 56px -12px rgba(42,171,238,.6); }
+
+.btn-block{ width:100%; }
+.btn-sm{ padding:11px 20px; font-size:.85rem; }
+
+/* =====================  NAVBAR  ===================== */
+.nav{
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  transition:all .35s var(--ease);
+  padding-block:16px;
+}
+.nav.scrolled{
+  background:rgba(10,10,26,.82);
+  backdrop-filter:blur(18px) saturate(160%);
+  -webkit-backdrop-filter:blur(18px) saturate(160%);
+  border-bottom:1px solid var(--border);
+  padding-block:10px;
+}
+.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+
+.brand{ display:flex; align-items:center; gap:11px; }
+.brand-mark{
+  width:38px; height:38px; border-radius:11px; flex-shrink:0;
+  background:linear-gradient(135deg, rgba(201,168,76,.22), rgba(0,212,255,.16));
+  border:1px solid var(--border-gold);
+  display:grid; place-items:center; overflow:hidden;
+  box-shadow:0 0 24px -6px rgba(201,168,76,.45);
+}
+.brand-mark img{ height:26px; width:auto; object-fit:contain; }
+.brand-text{ display:flex; flex-direction:column; line-height:1.05; }
+.brand-name{ font-size:1.16rem; font-weight:900; letter-spacing:-.03em; }
+.brand-tag{ font-size:.56rem; letter-spacing:.24em; text-transform:uppercase; color:var(--gold); font-weight:700; }
+
+.nav-links{ display:flex; align-items:center; gap:34px; }
+.nav-links a{ font-size:.9rem; font-weight:500; color:var(--text-muted); transition:color .22s; position:relative; }
+.nav-links a::after{
+  content:''; position:absolute; left:0; bottom:-6px; height:2px; width:0;
+  background:linear-gradient(90deg,var(--gold),var(--blue)); transition:width .3s var(--ease); border-radius:2px;
+}
+.nav-links a:hover{ color:var(--text); }
+.nav-links a:hover::after{ width:100%; }
+.nav-cta{ display:flex; align-items:center; gap:12px; }
+
+.burger{
+  display:none; width:44px; height:44px; border-radius:12px;
+  background:rgba(255,255,255,.05); border:1px solid var(--border);
+  cursor:pointer; place-items:center; flex-direction:column; gap:5px; padding:0;
+}
+.burger span{ width:20px; height:2px; background:var(--text); border-radius:2px; transition:all .3s var(--ease); display:block; }
+.burger.open span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2){ opacity:0; }
+.burger.open span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+/* =====================  HERO  ===================== */
+.hero{ padding-top:clamp(130px,17vw,190px); padding-bottom:clamp(60px,8vw,100px); }
+.hero-grid{ display:grid; grid-template-columns:1.08fr .92fr; gap:clamp(36px,5vw,70px); align-items:center; }
+
+.hero h1{ font-size:clamp(2.35rem, 5.6vw, 4.05rem); font-weight:900; margin-bottom:22px; letter-spacing:-.038em; }
+.hero-sub{ font-size:clamp(1.02rem,1.7vw,1.16rem); color:var(--text-muted); max-width:560px; margin-bottom:36px; }
+.hero-sub strong{ color:var(--text); font-weight:600; }
+
+.hero-cta{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:32px; }
+
+.hero-trust{ display:flex; flex-wrap:wrap; gap:20px; }
+.trust-item{ display:flex; align-items:center; gap:9px; font-size:.85rem; color:var(--text-muted); }
+.trust-item svg{ width:17px; height:17px; color:var(--blue); flex-shrink:0; }
+
+/* Tarjeta visual del hero */
+.hero-visual{ position:relative; display:grid; place-items:center; min-height:390px; }
+.hero-emblem{
+  width:min(230px, 62vw); aspect-ratio:55/145;
+  position:relative; z-index:2;
+  filter:drop-shadow(0 22px 46px rgba(201,168,76,.42));
+  animation:float 6.5s ease-in-out infinite;
+}
+.hero-emblem img{ width:100%; height:100%; object-fit:contain; }
+@keyframes float{ 0%,100%{ transform:translateY(0); } 50%{ transform:translateY(-18px); } }
+
+.hero-glow{
+  position:absolute; width:min(420px,88vw); aspect-ratio:1; border-radius:50%;
+  background:radial-gradient(circle, rgba(201,168,76,.24), rgba(0,212,255,.11) 48%, transparent 70%);
+  filter:blur(38px); z-index:1;
+}
+
+.float-card{
+  position:absolute; z-index:3;
+  background:rgba(14,14,34,.86); backdrop-filter:blur(14px);
+  border:1px solid var(--border); border-radius:14px;
+  padding:13px 17px; box-shadow:var(--shadow);
+  font-size:.8rem; font-weight:600; display:flex; align-items:center; gap:10px;
+  animation:float 6.5s ease-in-out infinite;
+}
+.float-card .fc-ico{ width:31px; height:31px; border-radius:9px; display:grid; place-items:center; flex-shrink:0; }
+.float-card .fc-ico svg{ width:16px; height:16px; }
+.float-card .fc-lbl{ display:block; font-size:.63rem; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:.09em; }
+.fc-1{ top:6%; left:-2%; animation-delay:-1.4s; }
+.fc-1 .fc-ico{ background:rgba(0,212,255,.14); color:var(--blue); }
+.fc-2{ bottom:10%; right:-3%; animation-delay:-3.1s; }
+.fc-2 .fc-ico{ background:rgba(201,168,76,.15); color:var(--gold); }
+.fc-3{ bottom:34%; left:-5%; animation-delay:-4.6s; }
+.fc-3 .fc-ico{ background:rgba(37,211,102,.14); color:#25D366; }
+
+/* =====================  STATS  ===================== */
+.stats{ padding-block:0; }
+.stats-grid{
+  display:grid; grid-template-columns:repeat(4,1fr); gap:1px;
+  background:var(--border); border:1px solid var(--border);
+  border-radius:var(--radius-lg); overflow:hidden;
+}
+.stat{ background:var(--bg-soft); padding:32px 22px; text-align:center; }
+.stat-num{ font-size:clamp(1.75rem,3.4vw,2.5rem); font-weight:900; letter-spacing:-.04em; margin-bottom:6px; }
+.stat-lbl{ font-size:.78rem; color:var(--text-muted); font-weight:500; }
+
+/* =====================  SERVICIOS  ===================== */
+.cards-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+
+.svc{
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:38px 30px;
+  transition:all .35s var(--ease); position:relative; overflow:hidden;
+  display:flex; flex-direction:column;
+}
+.svc::before{
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(160deg, rgba(201,168,76,.09), transparent 52%);
+  opacity:0; transition:opacity .35s;
+}
+.svc:hover{ transform:translateY(-9px); border-color:var(--border-gold); background:var(--bg-card-hover); box-shadow:var(--shadow); }
+.svc:hover::before{ opacity:1; }
+.svc > *{ position:relative; z-index:1; }
+
+.svc-ico{
+  width:56px; height:56px; border-radius:16px; display:grid; place-items:center; margin-bottom:22px;
+  background:linear-gradient(135deg, rgba(201,168,76,.15), rgba(0,212,255,.1));
+  border:1px solid var(--border-gold);
+}
+.svc-ico svg{ width:26px; height:26px; color:var(--gold); }
+
+.svc-dur{ display:flex; align-items:baseline; gap:7px; margin-bottom:9px; }
+.svc-dur b{ font-size:2.5rem; font-weight:900; letter-spacing:-.05em; }
+.svc-dur span{ font-size:.95rem; color:var(--text-dim); font-weight:600; }
+.svc h3{ font-size:1.16rem; margin-bottom:11px; }
+.svc p{ color:var(--text-muted); font-size:.92rem; margin-bottom:22px; }
+.svc-list{ display:flex; flex-direction:column; gap:11px; margin-bottom:26px; }
+.svc-list li{ display:flex; align-items:flex-start; gap:10px; font-size:.885rem; color:var(--text-muted); }
+.svc-list svg{ width:16px; height:16px; color:var(--blue); flex-shrink:0; margin-top:4px; }
+.svc-price{ margin-top:auto; padding-top:22px; border-top:1px solid var(--border); display:flex; align-items:baseline; justify-content:space-between; gap:10px; }
+.svc-price .amt{ font-size:1.85rem; font-weight:900; letter-spacing:-.04em; }
+.svc-price .per{ font-size:.76rem; color:var(--text-dim); }
+
+.badge-pop{
+  position:absolute; top:19px; right:19px; z-index:2;
+  font-size:.63rem; font-weight:800; letter-spacing:.1em; text-transform:uppercase;
+  background:linear-gradient(120deg,var(--gold-light),var(--gold)); color:#1a1405;
+  padding:6px 13px; border-radius:100px;
+}
+
+/* =====================  PRECIOS  ===================== */
+.pricing-wrap{ display:grid; grid-template-columns:1.35fr .65fr; gap:30px; align-items:start; }
+
+.table-card{
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-lg); overflow:hidden;
+}
+.table-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table{ width:100%; border-collapse:collapse; min-width:600px; }
+thead th{
+  background:rgba(255,255,255,.045);
+  padding:19px 22px; text-align:left; font-size:.71rem; font-weight:800;
+  letter-spacing:.13em; text-transform:uppercase; color:var(--gold);
+  border-bottom:1px solid var(--border); white-space:nowrap;
+}
+tbody td{ padding:21px 22px; border-bottom:1px solid rgba(255,255,255,.05); font-size:.94rem; vertical-align:middle; }
+tbody tr:last-child td{ border-bottom:none; }
+tbody tr{ transition:background .22s; }
+tbody tr:hover{ background:rgba(255,255,255,.032); }
+.td-format{ font-weight:700; }
+.td-format small{ display:block; font-weight:400; font-size:.76rem; color:var(--text-dim); margin-top:3px; }
+.td-price{ font-weight:900; font-size:1.24rem; letter-spacing:-.03em; }
+.td-adv{ color:var(--blue); font-weight:700; }
+.td-time{ color:var(--text-muted); font-size:.87rem; white-space:nowrap; }
+
+.pay-note{
+  display:flex; align-items:flex-start; gap:13px;
+  padding:19px 22px; background:rgba(0,212,255,.05);
+  border-top:1px solid var(--border);
+}
+.pay-note svg{ width:20px; height:20px; color:var(--blue); flex-shrink:0; margin-top:2px; }
+.pay-note p{ font-size:.855rem; color:var(--text-muted); }
+.pay-note b{ color:var(--text); }
+
+.pay-card{
+  background:linear-gradient(165deg, rgba(201,168,76,.1), rgba(0,212,255,.05));
+  border:1px solid var(--border-gold); border-radius:var(--radius-lg);
+  padding:34px 28px; position:sticky; top:100px;
+}
+.pay-card h3{ font-size:1.28rem; margin-bottom:11px; }
+.pay-card > p{ color:var(--text-muted); font-size:.9rem; margin-bottom:24px; }
+.pay-steps{ display:flex; flex-direction:column; gap:15px; margin-bottom:28px; }
+.pay-step{ display:flex; gap:12px; font-size:.875rem; }
+.pay-step .n{
+  width:25px; height:25px; border-radius:50%; flex-shrink:0;
+  background:rgba(201,168,76,.16); border:1px solid var(--border-gold);
+  color:var(--gold); display:grid; place-items:center;
+  font-size:.72rem; font-weight:800;
+}
+.pay-step span{ color:var(--text-muted); }
+.pay-step b{ color:var(--text); }
+.pay-btns{ display:flex; flex-direction:column; gap:11px; }
+
+/* =====================  VIDEO  ===================== */
+.video-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(36px,5vw,72px); align-items:center; }
+
+.phone{
+  width:min(310px, 80vw); margin-inline:auto; position:relative;
+  aspect-ratio:9/16; border-radius:38px; padding:11px;
+  background:linear-gradient(160deg, #23233d, #0d0d1c);
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 42px 90px -26px rgba(0,0,0,.9), 0 0 0 1px rgba(201,168,76,.14), 0 0 70px -22px rgba(201,168,76,.4);
+}
+.phone::after{
+  content:''; position:absolute; top:11px; left:50%; transform:translateX(-50%);
+  width:88px; height:20px; background:#0d0d1c; border-radius:0 0 14px 14px; z-index:3;
+}
+.phone-screen{ width:100%; height:100%; border-radius:28px; overflow:hidden; background:#000; position:relative; }
+.phone-screen video{ width:100%; height:100%; object-fit:cover; display:block; }
+.phone-glare{
+  position:absolute; inset:0; border-radius:28px; pointer-events:none; z-index:2;
+  background:linear-gradient(125deg, rgba(255,255,255,.09), transparent 38%, transparent 62%, rgba(255,255,255,.045));
+}
+
+.video-copy h2{ font-size:clamp(1.85rem,3.8vw,2.7rem); margin-bottom:18px; }
+.video-copy > p{ color:var(--text-muted); margin-bottom:28px; font-size:1.02rem; }
+.video-feats{ display:flex; flex-direction:column; gap:16px; margin-bottom:32px; }
+.vf{ display:flex; gap:14px; }
+.vf-ico{
+  width:42px; height:42px; border-radius:12px; flex-shrink:0; display:grid; place-items:center;
+  background:rgba(0,212,255,.09); border:1px solid var(--border-blue); color:var(--blue);
+}
+.vf-ico svg{ width:19px; height:19px; }
+.vf h4{ font-size:.97rem; margin-bottom:3px; }
+.vf p{ font-size:.865rem; color:var(--text-muted); }
+
+/* =====================  PROCESO  ===================== */
+.steps{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; position:relative; }
+.step{
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:40px 30px; text-align:center;
+  transition:all .35s var(--ease); position:relative;
+}
+.step:hover{ transform:translateY(-8px); border-color:var(--border-blue); background:var(--bg-card-hover); }
+.step-num{
+  width:60px; height:60px; margin:0 auto 22px; border-radius:50%;
+  display:grid; place-items:center; font-size:1.42rem; font-weight:900;
+  background:linear-gradient(135deg, rgba(0,212,255,.14), rgba(201,168,76,.12));
+  border:1px solid var(--border-blue); color:var(--blue);
+  position:relative;
+}
+.step:not(:last-child)::after{
+  content:''; position:absolute; top:calc(40px + 30px); left:calc(50% + 46px); width:calc(100% - 92px);
+  height:2px; background:linear-gradient(90deg, var(--border-blue), transparent);
+}
+.step h3{ font-size:1.2rem; margin-bottom:12px; }
+.step p{ color:var(--text-muted); font-size:.92rem; }
+.step-time{
+  display:inline-block; margin-top:18px; font-size:.72rem; font-weight:700;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--gold);
+  background:rgba(201,168,76,.09); border:1px solid var(--border-gold);
+  padding:5px 14px; border-radius:100px;
+}
+
+/* =====================  TESTIMONIOS  ===================== */
+.tst-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.tst{
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:34px 30px;
+  transition:all .35s var(--ease); display:flex; flex-direction:column;
+}
+.tst:hover{ transform:translateY(-7px); border-color:var(--border-gold); background:var(--bg-card-hover); }
+.tst-stars{ display:flex; gap:4px; margin-bottom:18px; }
+.tst-stars svg{ width:17px; height:17px; color:var(--gold); }
+.tst-quote{ font-size:.96rem; color:var(--text-muted); font-style:italic; margin-bottom:24px; flex-grow:1; }
+.tst-author{ display:flex; align-items:center; gap:13px; padding-top:20px; border-top:1px solid var(--border); }
+.tst-avatar{
+  width:44px; height:44px; border-radius:50%; flex-shrink:0; display:grid; place-items:center;
+  background:linear-gradient(135deg, rgba(201,168,76,.2), rgba(0,212,255,.14));
+  border:1px solid var(--border); font-weight:800; color:var(--gold); font-size:.95rem;
+}
+.tst-name{ font-weight:700; font-size:.93rem; }
+.tst-role{ font-size:.79rem; color:var(--text-dim); }
+
+.tst-placeholder{
+  text-align:center; margin-top:34px; padding:22px 26px;
+  background:rgba(201,168,76,.05); border:1px dashed var(--border-gold);
+  border-radius:var(--radius); font-size:.86rem; color:var(--text-muted);
+}
+.tst-placeholder code{
+  background:rgba(255,255,255,.07); padding:2px 7px; border-radius:6px;
+  font-size:.83rem; color:var(--gold); font-family:ui-monospace,'Cascadia Code',Consolas,monospace;
+}
+
+/* =====================  CONTACTO  ===================== */
+.contact-grid{ display:grid; grid-template-columns:.95fr 1.05fr; gap:clamp(30px,4.5vw,54px); align-items:start; }
+
+.agent{
+  background:var(--bg-card); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:28px; margin-bottom:18px;
+  transition:all .3s var(--ease);
+}
+.agent:hover{ border-color:var(--border-blue); background:var(--bg-card-hover); }
+.agent-head{ display:flex; align-items:center; gap:15px; margin-bottom:20px; }
+.agent-avatar{
+  width:52px; height:52px; border-radius:50%; flex-shrink:0; display:grid; place-items:center;
+  background:linear-gradient(135deg, rgba(0,212,255,.17), rgba(201,168,76,.13));
+  border:1px solid var(--border-blue); font-weight:900; font-size:1.12rem; color:var(--blue);
+}
+.agent-name{ font-size:1.11rem; font-weight:800; }
+.agent-phone{ font-size:.87rem; color:var(--text-muted); font-family:ui-monospace,'Cascadia Code',Consolas,monospace; }
+.agent-btns{ display:grid; grid-template-columns:1fr 1fr; gap:11px; }
+
+.quote-card{
+  background:linear-gradient(165deg, rgba(0,212,255,.07), rgba(201,168,76,.045));
+  border:1px solid var(--border-blue); border-radius:var(--radius-lg); padding:34px 30px;
+}
+.quote-card h3{ font-size:1.28rem; margin-bottom:9px; }
+.quote-card > p{ color:var(--text-muted); font-size:.9rem; margin-bottom:26px; }
+
+.field{ margin-bottom:19px; }
+.field label{ display:block; font-size:.79rem; font-weight:700; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); margin-bottom:9px; }
+.field input, .field select, .field textarea{
+  width:100%; font-family:inherit; font-size:.95rem; color:var(--text);
+  background:rgba(255,255,255,.045); border:1px solid var(--border);
+  border-radius:var(--radius-sm); padding:14px 16px; transition:all .25s var(--ease);
+}
+.field textarea{ resize:vertical; min-height:96px; }
+.field input::placeholder, .field textarea::placeholder{ color:var(--text-dim); }
+.field input:focus, .field select:focus, .field textarea:focus{
+  outline:none; border-color:var(--blue); background:rgba(0,212,255,.055);
+  box-shadow:0 0 0 4px rgba(0,212,255,.11);
+}
+.field select{ cursor:pointer; appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239aa2ba' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 16px center; padding-right:44px;
+}
+.field select option{ background:#14142c; color:var(--text); }
+
+/* =====================  FOOTER  ===================== */
+footer{
+  border-top:1px solid var(--border); padding-block:clamp(52px,6vw,76px) 32px;
+  position:relative; z-index:1; background:rgba(8,8,20,.55);
+}
+.foot-grid{ display:grid; grid-template-columns:1.5fr 1fr 1fr 1.15fr; gap:38px; margin-bottom:48px; }
+.foot-brand{ display:flex; align-items:center; gap:11px; margin-bottom:17px; }
+.foot-desc{ color:var(--text-muted); font-size:.885rem; max-width:280px; }
+.foot-h{ font-size:.75rem; font-weight:800; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:19px; }
+.foot-links{ display:flex; flex-direction:column; gap:11px; }
+.foot-links a{ color:var(--text-muted); font-size:.885rem; transition:all .22s; display:inline-flex; align-items:center; gap:8px; }
+.foot-links a:hover{ color:var(--blue); transform:translateX(3px); }
+
+.socials{ display:flex; gap:11px; margin-top:17px; }
+.social{
+  width:41px; height:41px; border-radius:12px; display:grid; place-items:center;
+  background:rgba(255,255,255,.05); border:1px solid var(--border);
+  color:var(--text-muted); transition:all .28s var(--ease);
+}
+.social svg{ width:18px; height:18px; }
+.social:hover{ transform:translateY(-4px); color:#fff; }
+.social:hover.wa{ background:#25D366; border-color:#25D366; }
+.social:hover.tg{ background:#2AABEE; border-color:#2AABEE; }
+.social:hover.fb{ background:#1877F2; border-color:#1877F2; }
+.social:hover.ig{ background:linear-gradient(45deg,#f09433,#dc2743,#bc1888); border-color:#dc2743; }
+
+.foot-bottom{
+  border-top:1px solid var(--border); padding-top:27px;
+  display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:space-between;
+  font-size:.82rem; color:var(--text-dim);
+}
+.foot-bottom .made{ display:inline-flex; align-items:center; gap:7px; }
+.foot-bottom .made svg{ width:14px; height:14px; color:var(--gold); }
+
+/* =====================  WHATSAPP FLOTANTE  ===================== */
+.wa-float{
+  position:fixed; bottom:26px; right:26px; z-index:900;
+  width:58px; height:58px; border-radius:50%; display:grid; place-items:center;
+  background:linear-gradient(135deg,#25D366,#128C7E); color:#fff;
+  box-shadow:0 14px 38px -8px rgba(37,211,102,.6);
+  transition:all .3s var(--ease);
+}
+.wa-float svg{ width:29px; height:29px; }
+.wa-float:hover{ transform:scale(1.1) translateY(-3px); box-shadow:0 20px 48px -8px rgba(37,211,102,.75); }
+.wa-float::before{
+  content:''; position:absolute; inset:0; border-radius:50%;
+  border:2px solid #25D366; animation:ripple 2.6s infinite;
+}
+@keyframes ripple{ 0%{ transform:scale(1); opacity:.75; } 100%{ transform:scale(1.65); opacity:0; } }
+
+/* =====================  ANIMACIONES SCROLL  ===================== */
+.reveal{ opacity:0; transform:translateY(28px); transition:opacity .75s var(--ease), transform .75s var(--ease); }
+.reveal.in{ opacity:1; transform:none; }
+.d1{ transition-delay:.09s; } .d2{ transition-delay:.18s; } .d3{ transition-delay:.27s; } .d4{ transition-delay:.36s; }
+
+/* =====================  RESPONSIVE  ===================== */
+@media (max-width:1024px){
+  .hero-grid{ grid-template-columns:1fr; text-align:center; }
+  .hero-sub{ margin-inline:auto; }
+  .hero-cta, .hero-trust{ justify-content:center; }
+  .hero-visual{ order:-1; min-height:300px; }
+  .hero-emblem{ width:min(165px,44vw); }
+  .float-card{ font-size:.74rem; padding:10px 14px; }
+  .fc-1{ left:2%; } .fc-2{ right:2%; } .fc-3{ left:0; }
+  .video-grid{ grid-template-columns:1fr; text-align:center; }
+  .video-feats{ text-align:left; }
+  .phone{ order:-1; }
+  .pricing-wrap{ grid-template-columns:1fr; }
+  .pay-card{ position:static; }
+  .contact-grid{ grid-template-columns:1fr; }
+  .foot-grid{ grid-template-columns:1fr 1fr; gap:32px; }
+}
+
+@media (max-width:860px){
+  .nav-links{
+    position:fixed; inset:0 0 auto 0; top:0; padding:104px 26px 40px;
+    flex-direction:column; align-items:stretch; gap:6px;
+    background:rgba(10,10,26,.98); backdrop-filter:blur(22px);
+    border-bottom:1px solid var(--border);
+    transform:translateY(-104%); transition:transform .42s var(--ease);
+    box-shadow:0 28px 60px -20px rgba(0,0,0,.9);
+  }
+  .nav-links.open{ transform:translateY(0); }
+  .nav-links a{ padding:15px 4px; font-size:1.06rem; font-weight:600; border-bottom:1px solid var(--border); }
+  .nav-links a::after{ display:none; }
+  .burger{ display:flex; }
+  .nav-cta .btn{ display:none; }
+  .nav-cta .btn.keep{ display:inline-flex; }
+
+  .cards-3, .steps, .tst-grid{ grid-template-columns:1fr; }
+  .step:not(:last-child)::after{ display:none; }
+  .stats-grid{ grid-template-columns:1fr 1fr; }
+  .hero-trust{ flex-direction:column; align-items:center; gap:13px; }
+}
+
+@media (max-width:560px){
+  .foot-grid{ grid-template-columns:1fr; }
+  .agent-btns{ grid-template-columns:1fr; }
+  .btn{ padding:14px 24px; font-size:.9rem; }
+  .hero-cta{ flex-direction:column; }
+  .hero-cta .btn{ width:100%; }
+  .wa-float{ bottom:18px; right:18px; width:54px; height:54px; }
+  .float-card{ display:none; }
+  .fc-2{ display:flex; }
+  thead th, tbody td{ padding-inline:16px; }
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; }
+  html{ scroll-behavior:auto; }
+  .reveal{ opacity:1; transform:none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================== NAVBAR ============================== -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#inicio" class="brand" aria-label="Publidigital, inicio">
+      <span class="brand-mark"><img src="logo.png" alt="Logo de Publidigital"></span>
+      <span class="brand-text">
+        <span class="brand-name">PUBLI<span class="grad-gold">DIGITAL</span></span>
+        <span class="brand-tag">Videos con IA</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a>
+      <a href="#precios">Precios</a>
+      <a href="#video">Video</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#testimonios">Testimonios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a class="btn btn-primary btn-sm keep" href="https://wa.me/525546539933?text=Hola%20Publidigital%2C%20quiero%20un%20video%20publicitario%20para%20mi%20negocio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Cotizar ahora
+      </a>
+      <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <span class="eyebrow reveal"><span class="dot"></span> Toluca · Metepec · Zona metropolitana</span>
+
+      <h1 class="reveal d1">
+        Videos que <span class="grad-gold">venden</span>,<br>
+        sin cámara ni equipo<br>
+        de producción
+      </h1>
+
+      <p class="hero-sub reveal d2">
+        En <strong>Publidigital</strong> creamos tu video publicitario con inteligencia artificial:
+        guion, locución, imágenes y edición profesional. Tú solo lo publicas.
+        <strong>Entrega en 2 días.</strong>
+      </p>
+
+      <div class="hero-cta reveal d3">
+        <a href="#precios" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+          Ver precios y paquetes
+        </a>
+        <a href="https://wa.me/525546539933?text=Hola%20Publidigital%2C%20quiero%20un%20video%20publicitario%20para%20mi%20negocio." target="_blank" rel="noopener" class="btn btn-ghost">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+
+      <div class="hero-trust reveal d4">
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>
+          Anticipo del 50%
+        </span>
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Entrega en 2 días
+        </span>
+        <span class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          Formatos 30s / 60s / 90s
+        </span>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-emblem">
+        <img src="logo.png" alt="Emblema de Publidigital">
+      </div>
+
+      <div class="float-card fc-1">
+        <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+        <span><span class="fc-lbl">Formato</span>Vertical 9:16</span>
+      </div>
+
+      <div class="float-card fc-2">
+        <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <span><span class="fc-lbl">Entrega</span>Listo en 2 días</span>
+      </div>
+
+      <div class="float-card fc-3">
+        <span class="fc-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.5L21 9.8l-4.5 4.3 1.1 6.4L12 17.4 6.4 20.5l1.1-6.4L3 9.8l6.4-1.3L12 2z"/></svg></span>
+        <span><span class="fc-lbl">Hecho con</span>Inteligencia Artificial</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== STATS ============================== -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid reveal">
+      <div class="stat">
+        <div class="stat-num grad-blue">2</div>
+        <div class="stat-lbl">Días de entrega</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-gold">3</div>
+        <div class="stat-lbl">Formatos disponibles</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-blue">100%</div>
+        <div class="stat-lbl">Producido con IA</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num grad-gold">50%</div>
+        <div class="stat-lbl">Anticipo para arrancar</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SERVICIOS ============================== -->
+<section id="servicios">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Nuestros servicios</span>
+      <h2 class="section-title">Elige el formato <span class="grad-gold">ideal</span> para tu negocio</h2>
+      <p class="section-sub">Tres duraciones pensadas para cada objetivo: desde un anuncio rápido para redes hasta la presentación completa de tu negocio.</p>
+    </div>
+
+    <div class="cards-3">
+      <!-- Servicio 30s -->
+      <article class="svc reveal d1">
+        <div class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z"/></svg>
+        </div>
+        <div class="svc-dur"><b class="grad-blue">30</b><span>segundos</span></div>
+        <h3>Impacto rápido</h3>
+        <p>Perfecto para Reels, TikTok y anuncios de Facebook e Instagram. Capta la atención en los primeros segundos.</p>
+        <ul class="svc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Guion publicitario optimizado</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Locución con voz IA</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Música y efectos de sonido</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Formato vertical y horizontal</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Listo para publicar</li>
+        </ul>
+        <div class="svc-price">
+          <span class="amt grad-blue">$250</span>
+          <span class="per">MXN · anticipo $125</span>
+        </div>
+      </article>
+
+      <!-- Servicio 60s -->
+      <article class="svc reveal d2">
+        <span class="badge-pop">Más popular</span>
+        <div class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.5L21 9.8l-4.5 4.3 1.1 6.4L12 17.4 6.4 20.5l1.1-6.4L3 9.8l6.4-1.3L12 2z"/></svg>
+        </div>
+        <div class="svc-dur"><b class="grad-gold">60</b><span>segundos</span></div>
+        <h3>Equilibrio perfecto</h3>
+        <p>El punto medio ideal: suficiente tiempo para contar tu historia y explicar por qué elegirte, sin perder la atención.</p>
+        <ul class="svc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Todo lo del plan de 30s</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Más escenas y tomas</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Presentación de beneficios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Subtítulos integrados</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Llamado a la acción final</li>
+        </ul>
+        <div class="svc-price">
+          <span class="amt grad-gold">$350</span>
+          <span class="per">MXN · anticipo $175</span>
+        </div>
+      </article>
+
+      <!-- Servicio 90s -->
+      <article class="svc reveal d3">
+        <div class="svc-ico">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 9h20M7 4v5M17 4v5"/></svg>
+        </div>
+        <div class="svc-dur"><b class="grad-blue">90</b><span>segundos</span></div>
+        <h3>Presentación completa</h3>
+        <p>Ideal para mostrar tu negocio a fondo: instalaciones, productos, servicios, equipo y todo lo que te hace diferente.</p>
+        <ul class="svc-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Todo lo del plan de 60s</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Recorrido por tu negocio</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Muestra de productos o servicios</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Testimonio o sello de confianza</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Cierre con datos de contacto</li>
+        </ul>
+        <div class="svc-price">
+          <span class="amt grad-blue">$400</span>
+          <span class="per">MXN · anticipo $200</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PRECIOS ============================== -->
+<section id="precios">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Precios transparentes</span>
+      <h2 class="section-title">Inversión clara, <span class="grad-gold">sin sorpresas</span></h2>
+      <p class="section-sub">Todos los paquetes incluyen guion, producción con IA, edición y entrega final lista para publicar. Solo apartas con el 50%.</p>
+    </div>
+
+    <div class="pricing-wrap">
+      <div class="table-card reveal d1">
+        <div class="table-scroll">
+          <table>
+            <caption class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Tabla de precios de videos publicitarios de Publidigital</caption>
+            <thead>
+              <tr>
+                <th scope="col">Formato</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Anticipo (50%)</th>
+                <th scope="col">Entrega</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-format">Video 30 segundos<small>Reels, TikTok, anuncios rápidos</small></td>
+                <td class="td-price grad-blue">$250 <span style="font-size:.72rem;font-weight:600;color:var(--text-dim);">MXN</span></td>
+                <td class="td-adv">$125 MXN</td>
+                <td class="td-time">2 días</td>
+              </tr>
+              <tr>
+                <td class="td-format">Video 60 segundos<small>El más solicitado por pymes</small></td>
+                <td class="td-price grad-gold">$350 <span style="font-size:.72rem;font-weight:600;color:var(--text-dim);">MXN</span></td>
+                <td class="td-adv">$175 MXN</td>
+                <td class="td-time">2 días</td>
+              </tr>
+              <tr>
+                <td class="td-format">Video 90 segundos<small>Presentación completa del negocio</small></td>
+                <td class="td-price grad-blue">$400 <span style="font-size:.72rem;font-weight:600;color:var(--text-dim);">MXN</span></td>
+                <td class="td-adv">$200 MXN</td>
+                <td class="td-time">2 días</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pay-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+          <p><b>¿Cómo funciona el pago?</b> Apartas tu proyecto con el <b>50% de anticipo</b> y liquidas el resto al recibir tu video terminado y aprobado. Aceptamos pagos con criptomonedas a través de NOWPayments, además de transferencia y efectivo.</p>
+        </div>
+      </div>
+
+      <aside class="pay-card reveal d2">
+        <h3>Aparta tu video <span class="grad-gold">hoy</span></h3>
+        <p>Agenda limitada: producimos un número reducido de videos por semana para cuidar la calidad.</p>
+
+        <div class="pay-steps">
+          <div class="pay-step"><span class="n">1</span><span>Elige tu formato y <b>paga el anticipo del 50%</b>.</span></div>
+          <div class="pay-step"><span class="n">2</span><span>Nos compartes los datos de tu negocio por <b>WhatsApp</b>.</span></div>
+          <div class="pay-step"><span class="n">3</span><span>Recibes tu video en <b>2 días</b> y liquidas el resto.</span></div>
+        </div>
+
+        <div class="pay-btns">
+          <button class="btn btn-gold btn-block pay-btn" data-plan="v60" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Pagar anticipo · 60s ($175)
+          </button>
+          <button class="btn btn-ghost btn-block pay-btn" data-plan="v30" type="button">Pagar anticipo · 30s ($125)</button>
+          <button class="btn btn-ghost btn-block pay-btn" data-plan="v90" type="button">Pagar anticipo · 90s ($200)</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== VIDEO ============================== -->
+<section id="video">
+  <div class="container video-grid">
+    <div class="phone reveal">
+      <div class="phone-screen">
+        <video
+          controls
+          playsinline
+          preload="none"
+          poster="poster.jpg"
+          aria-label="Video promocional de Publidigital">
+          <source src="promo_publidigital_web.mp4" type="video/mp4">
+          Tu navegador no puede reproducir este video.
+          <a href="promo_publidigital_web.mp4">Descárgalo aquí</a>.
+        </video>
+        <div class="phone-glare" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="video-copy reveal d1">
+      <span class="eyebrow"><span class="dot"></span> Nuestro trabajo</span>
+      <h2>Así se ve un video <span class="grad-gold">hecho por nosotros</span></h2>
+      <p>Este es un ejemplo real de lo que producimos con inteligencia artificial. Sin cámaras, sin estudio y sin contratar actores: solo tu idea convertida en un video profesional listo para publicar.</p>
+
+      <div class="video-feats">
+        <div class="vf">
+          <span class="vf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></span>
+          <div>
+            <h4>Formato vertical 9:16</h4>
+            <p>Optimizado para Reels, TikTok, Stories y Shorts.</p>
+          </div>
+        </div>
+        <div class="vf">
+          <span class="vf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v3"/></svg></span>
+          <div>
+            <h4>Locución y música incluidas</h4>
+            <p>Voz profesional generada con IA y audio listo para publicar.</p>
+          </div>
+        </div>
+        <div class="vf">
+          <span class="vf-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16M9 4v16"/></svg></span>
+          <div>
+            <h4>Adaptable a tu marca</h4>
+            <p>Colores, logo y mensaje alineados a tu negocio.</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://wa.me/525546539933?text=Hola%20Publidigital%2C%20vi%20su%20video%20promocional%20y%20quiero%20uno%20para%20mi%20negocio." target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Quiero un video así
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROCESO ============================== -->
+<section id="proceso">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Cómo trabajamos</span>
+      <h2 class="section-title">Tu video listo en <span class="grad-gold">3 pasos</span></h2>
+      <p class="section-sub">Un proceso simple y sin complicaciones. Tú te enfocas en tu negocio, nosotros en el video.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step reveal d1">
+        <div class="step-num">1</div>
+        <h3>Cuéntanos tu idea</h3>
+        <p>Escríbenos por WhatsApp o Telegram y platícanos sobre tu negocio: qué vendes, a quién y qué quieres lograr con el video.</p>
+        <span class="step-time">Mismo día</span>
+      </article>
+
+      <article class="step reveal d2">
+        <div class="step-num">2</div>
+        <h3>Aparta con el 50%</h3>
+        <p>Confirma tu formato y paga el anticipo del 50%. Con eso reservamos tu lugar en la agenda y comenzamos la producción.</p>
+        <span class="step-time">Anticipo 50%</span>
+      </article>
+
+      <article class="step reveal d3">
+        <div class="step-num">3</div>
+        <h3>Recibe tu video</h3>
+        <p>Te entregamos el video terminado, listo para publicar en tus redes. Revisas, apruebas y liquidas el resto.</p>
+        <span class="step-time">En 2 días</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== TESTIMONIOS ============================== -->
+<section id="testimonios">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Testimonios</span>
+      <h2 class="section-title">Lo que dicen <span class="grad-gold">nuestros clientes</span></h2>
+      <p class="section-sub">Negocios locales de Toluca, Metepec y la zona metropolitana que ya confiaron en nosotros.</p>
+    </div>
+
+    <!--
+      ══════════════════════════════════════════════════════════════
+      CÓMO AGREGAR RESEÑAS REALES
+      Reemplaza el texto de .tst-quote con la reseña verdadera y
+      actualiza las iniciales (.tst-avatar), el nombre (.tst-name)
+      y el giro del negocio (.tst-role).
+      ⚠️ No publiques testimonios inventados: es publicidad engañosa
+      y puede meterte en problemas legales.
+      ══════════════════════════════════════════════════════════════
+    -->
+    <div class="tst-grid">
+      <article class="tst reveal d1">
+        <div class="tst-stars" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+        </div>
+        <p class="tst-quote">«Escribe aquí la reseña real de tu primer cliente. Cuéntale a los demás cómo fue trabajar con Publidigital y qué resultado obtuvo su negocio.»</p>
+        <div class="tst-author">
+          <div class="tst-avatar">N</div>
+          <div>
+            <div class="tst-name">Nombre del cliente</div>
+            <div class="tst-role">Giro del negocio · Toluca</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tst reveal d2">
+        <div class="tst-stars" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+        </div>
+        <p class="tst-quote">«Este espacio está reservado para la reseña de tu segundo cliente. Pídesela por WhatsApp después de entregar el video y pégala aquí.»</p>
+        <div class="tst-author">
+          <div class="tst-avatar">N</div>
+          <div>
+            <div class="tst-name">Nombre del cliente</div>
+            <div class="tst-role">Giro del negocio · Metepec</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="tst reveal d3">
+        <div class="tst-stars" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.9 7.1.6-5.4 4.7 1.6 7L12 17.3 5.8 21.2l1.6-7L2 9.5l7.1-.6L12 2z"/></svg>
+        </div>
+        <p class="tst-quote">«Y aquí va la tercera reseña. En cuanto tengas tres testimonios reales, esta sección se convierte en tu mejor vendedor.»</p>
+        <div class="tst-author">
+          <div class="tst-avatar">N</div>
+          <div>
+            <div class="tst-name">Nombre del cliente</div>
+            <div class="tst-role">Giro del negocio · Zona metropolitana</div>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="tst-placeholder reveal">
+      ✏️ <b>Nota para el equipo de Publidigital:</b> estas tres tarjetas son plantillas.
+      Abre <code>index.html</code>, busca <code>.tst-quote</code> y sustituye el texto por reseñas
+      <b>reales</b> de tus clientes. No inventes testimonios: es publicidad engañosa.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== CONTACTO ============================== -->
+<section id="contacto">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Hablemos</span>
+      <h2 class="section-title">Contáctanos <span class="grad-gold">ahora mismo</span></h2>
+      <p class="section-sub">Escríbenos por WhatsApp o Telegram y con gusto te asesoramos sin compromiso. Respondemos el mismo día.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal d1">
+        <!-- Contacto Aurelio -->
+        <article class="agent">
+          <div class="agent-head">
+            <div class="agent-avatar">A</div>
+            <div>
+              <div class="agent-name">Aurelio</div>
+              <a class="agent-phone" href="tel:+525546539933">+52 55 4653 9933</a>
+            </div>
+          </div>
+          <div class="agent-btns">
+            <a class="btn btn-wa btn-sm" href="https://wa.me/525546539933?text=Hola%20Aurelio%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20videos%20publicitarios%20de%20Publidigital." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn btn-tg btn-sm" href="https://t.me/+525546539933" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram
+            </a>
+          </div>
+        </article>
+
+        <!-- Contacto Alejandro -->
+        <article class="agent">
+          <div class="agent-head">
+            <div class="agent-avatar">A</div>
+            <div>
+              <div class="agent-name">Alejandro</div>
+              <a class="agent-phone" href="tel:+5215522535418">+52 1 55 2253 5418</a>
+            </div>
+          </div>
+          <div class="agent-btns">
+            <a class="btn btn-wa btn-sm" href="https://wa.me/5215522535418?text=Hola%20Alejandro%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20videos%20publicitarios%20de%20Publidigital." target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              WhatsApp
+            </a>
+            <a class="btn btn-tg btn-sm" href="https://t.me/+5215522535418" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              Telegram
+            </a>
+          </div>
+        </article>
+
+        <div class="agent" style="background:rgba(0,212,255,.045);border-color:var(--border-blue);">
+          <p style="font-size:.885rem;color:var(--text-muted);margin:0;">
+            🕐 <b style="color:var(--text);">Horario de atención:</b> lunes a sábado, 9:00 a 20:00 h.<br>
+            📍 <b style="color:var(--text);">Zona de cobertura:</b> Toluca, Metepec y zona metropolitana del Valle de Toluca.
+          </p>
+        </div>
+      </div>
+
+      <!-- Cotizador -->
+      <div class="quote-card reveal d2">
+        <h3>Cotiza tu video en <span class="grad-blue">30 segundos</span></h3>
+        <p>Llena estos datos y te llevamos directo a WhatsApp con tu solicitud ya escrita. Sin formularios eternos.</p>
+
+        <form id="quoteForm" novalidate>
+          <div class="field">
+            <label for="qNombre">Nombre de tu negocio</label>
+            <input type="text" id="qNombre" name="nombre" placeholder="Ej. Tacos El Fogón" autocomplete="organization" required>
+          </div>
+
+          <div class="field">
+            <label for="qGiro">Giro o tipo de negocio</label>
+            <input type="text" id="qGiro" name="giro" placeholder="Ej. Restaurante, estética, taller mecánico" required>
+          </div>
+
+          <div class="field">
+            <label for="qFormato">Formato que te interesa</label>
+            <select id="qFormato" name="formato">
+              <option value="30 segundos ($250 MXN)">Video de 30 segundos — $250 MXN</option>
+              <option value="60 segundos ($350 MXN)" selected>Video de 60 segundos — $350 MXN</option>
+              <option value="90 segundos ($400 MXN)">Video de 90 segundos — $400 MXN</option>
+              <option value="aún no lo sé">Todavía no lo sé, quiero asesoría</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="qMensaje">¿Qué quieres lograr con tu video? <span style="text-transform:none;font-weight:500;color:var(--text-dim);">(opcional)</span></label>
+            <textarea id="qMensaje" name="mensaje" placeholder="Ej. Quiero atraer más clientes a mi local y promocionar una promoción de temporada."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="qAgente">¿Con quién quieres hablar?</label>
+            <select id="qAgente" name="agente">
+              <option value="aurelio" selected>Aurelio — +52 55 4653 9933</option>
+              <option value="alejandro">Alejandro — +52 1 55 2253 5418</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-wa btn-block">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Enviar solicitud por WhatsApp
+          </button>
+
+          <p id="quoteError" style="display:none;margin-top:14px;font-size:.85rem;color:#ff8080;text-align:center;"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="brand-mark"><img src="logo.png" alt="Logo de Publidigital"></span>
+          <span class="brand-text">
+            <span class="brand-name">PUBLI<span class="grad-gold">DIGITAL</span></span>
+            <span class="brand-tag">Videos con IA</span>
+          </span>
+        </div>
+        <p class="foot-desc">Agencia de videos publicitarios con inteligencia artificial para micronegocios, pymes y emprendedores del Valle de Toluca.</p>
+        <div class="socials">
+          <a class="social wa" href="https://wa.me/525546539933" target="_blank" rel="noopener" aria-label="WhatsApp de Publidigital">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a class="social tg" href="https://t.me/+525546539933" target="_blank" rel="noopener" aria-label="Telegram de Publidigital">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a class="social fb" href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook de Publidigital">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a class="social ig" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram de Publidigital">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405a1.441 1.441 0 01-2.88 0 1.44 1.44 0 012.88 0z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="foot-h">Navegación</h4>
+        <div class="foot-links">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#precios">Precios</a>
+          <a href="#video">Video promocional</a>
+          <a href="#proceso">Nuestro proceso</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="foot-h">Servicios</h4>
+        <div class="foot-links">
+          <a href="#servicios">Video 30 segundos</a>
+          <a href="#servicios">Video 60 segundos</a>
+          <a href="#servicios">Video 90 segundos</a>
+          <a href="#contacto">Asesoría gratuita</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="foot-h">Contacto</h4>
+        <div class="foot-links">
+          <a href="https://wa.me/525546539933" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Aurelio · 55 4653 9933
+          </a>
+          <a href="https://wa.me/5215522535418" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Alejandro · 55 2253 5418
+          </a>
+          <a href="https://t.me/+525546539933" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px;" aria-hidden="true"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </a>
+          <a href="#contacto">Toluca · Metepec · Edomex</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Publidigital. Todos los derechos reservados.</span>
+      <span class="made">
+        Hecho con
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        en Toluca, Estado de México
+      </span>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a class="wa-float" href="https://wa.me/525546539933?text=Hola%20Publidigital%2C%20quiero%20un%20video%20publicitario%20para%20mi%20negocio." target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<script>
+/* ============================================================
+   PUBLIDIGITAL — Configuración y comportamiento
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   ⚙️  CONFIGURACIÓN DE PAGOS — NOWPayments
+   ------------------------------------------------------------
+   1. Entra a tu panel de NOWPayments → Payment Links / Invoices.
+   2. Crea un enlace de pago para el anticipo de cada plan:
+        · 30s  → anticipo de $125 MXN
+        · 60s  → anticipo de $175 MXN
+        · 90s  → anticipo de $200 MXN
+   3. Pega cada enlace entre las comillas de abajo.
+   4. Guarda el archivo, súbelo a GitHub y listo.
+
+   ⚠️  MUY IMPORTANTE: nunca pongas tu API Key de NOWPayments
+   aquí. Este archivo es público y cualquiera podría leerla.
+   La API Key solo se usa desde un servidor, jamás en el navegador.
+
+   Mientras estos campos estén vacíos, el botón "Pagar anticipo"
+   abrirá WhatsApp con el pedido ya escrito, así no pierdes ventas.
+   ------------------------------------------------------------ */
+const NOWPAYMENTS_LINKS = {
+  v30: '',   // ← pega aquí el enlace de pago del anticipo de 30s ($125 MXN)
+  v60: '',   // ← pega aquí el enlace de pago del anticipo de 60s ($175 MXN)
+  v90: ''    // ← pega aquí el enlace de pago del anticipo de 90s ($200 MXN)
+};
+
+const PLANES = {
+  v30: { nombre: 'Video de 30 segundos', anticipo: '$125 MXN', total: '$250 MXN' },
+  v60: { nombre: 'Video de 60 segundos', anticipo: '$175 MXN', total: '$350 MXN' },
+  v90: { nombre: 'Video de 90 segundos', anticipo: '$200 MXN', total: '$400 MXN' }
+};
+
+const AGENTES = {
+  aurelio:   { nombre: 'Aurelio',   wa: '525546539933' },
+  alejandro: { nombre: 'Alejandro', wa: '5215522535418' }
+};
+
+/* ---------- Año dinámico en el footer ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ---------- Navbar: fondo al hacer scroll ---------- */
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+/* ---------- Menú móvil ---------- */
+const burger = document.getElementById('burger');
+const navLinks = document.getElementById('navLinks');
+
+burger.addEventListener('click', () => {
+  const abierto = navLinks.classList.toggle('open');
+  burger.classList.toggle('open', abierto);
+  burger.setAttribute('aria-expanded', String(abierto));
+  burger.setAttribute('aria-label', abierto ? 'Cerrar menú' : 'Abrir menú');
+});
+
+navLinks.querySelectorAll('a').forEach(enlace => {
+  enlace.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+/* ---------- Animaciones al hacer scroll ---------- */
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('in');
+      observador.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observador.observe(el));
+
+/* ---------- Botones de pago (NOWPayments con respaldo a WhatsApp) ---------- */
+document.querySelectorAll('.pay-btn').forEach(boton => {
+  boton.addEventListener('click', () => {
+    const plan = boton.dataset.plan;
+    const info = PLANES[plan];
+    const enlace = NOWPAYMENTS_LINKS[plan];
+
+    if (enlace && enlace.trim() !== '') {
+      window.open(enlace.trim(), '_blank', 'noopener');
+      return;
+    }
+
+    // Respaldo: el pago aún no está configurado → cerramos por WhatsApp
+    const mensaje = encodeURIComponent(
+      `Hola Publidigital, quiero apartar un ${info.nombre}.\n\n` +
+      `Total: ${info.total}\n` +
+      `Anticipo del 50%: ${info.anticipo}\n\n` +
+      `¿Me pasan los datos para hacer el pago del anticipo?`
+    );
+    window.open(`https://wa.me/${AGENTES.aurelio.wa}?text=${mensaje}`, '_blank', 'noopener');
+  });
+});
+
+/* ---------- Cotizador → WhatsApp ---------- */
+const form = document.getElementById('quoteForm');
+const errorBox = document.getElementById('quoteError');
+
+form.addEventListener('submit', (evento) => {
+  evento.preventDefault();
+
+  const negocio = document.getElementById('qNombre').value.trim();
+  const giro    = document.getElementById('qGiro').value.trim();
+  const formato = document.getElementById('qFormato').value;
+  const mensaje = document.getElementById('qMensaje').value.trim();
+  const agente  = AGENTES[document.getElementById('qAgente').value];
+
+  // Validación sencilla y accesible
+  if (!negocio || !giro) {
+    const faltante = !negocio ? document.getElementById('qNombre') : document.getElementById('qGiro');
+    errorBox.textContent = 'Por favor completa el nombre de tu negocio y el giro.';
+    errorBox.style.display = 'block';
+    faltante.focus();
+    return;
+  }
+
+  errorBox.style.display = 'none';
+
+  let texto =
+    `Hola ${agente.nombre}, vengo de la página de Publidigital.\n\n` +
+    `*Negocio:* ${negocio}\n` +
+    `*Giro:* ${giro}\n` +
+    `*Formato de interés:* ${formato}\n`;
+
+  if (mensaje) texto += `*Objetivo:* ${mensaje}\n`;
+  texto += `\n¿Me pueden dar más información y los datos para el anticipo?`;
+
+  window.open(`https://wa.me/${agente.wa}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+});
+
+/* ---------- Pausar el video al salir de la pantalla ---------- */
+const video = document.querySelector('.phone-screen video');
+if (video) {
+  const obsVideo = new IntersectionObserver((entradas) => {
+    entradas.forEach(e => {
+      if (!e.isIntersecting && !video.paused) video.pause();
+    });
+  }, { threshold: 0.25 });
+  obsVideo.observe(video);
+}
+
+/* ---------- Scroll suave con compensación del navbar fijo ---------- */
+document.querySelectorAll('a[href^="#"]').forEach(ancla => {
+  ancla.addEventListener('click', (e) => {
+    const id = ancla.getAttribute('href');
+    if (id === '#' || id.length < 2) return;
+    const destino = document.querySelector(id);
+    if (!destino) return;
+    e.preventDefault();
+    const y = destino.getBoundingClientRect().top + window.scrollY - 84;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  });
+});
+</script>
+
+</body>
+</html>

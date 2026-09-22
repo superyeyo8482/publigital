@@ -318,7 +318,6 @@ tbody tr:hover{ background:rgba(255,255,255,.032); }
 .td-format{ font-weight:700; }
 .td-format small{ display:block; font-weight:400; font-size:.76rem; color:var(--text-dim); margin-top:3px; }
 .td-price{ font-weight:900; font-size:1.24rem; letter-spacing:-.03em; }
-.td-adv{ color:var(--blue); font-weight:700; }
 .td-time{ color:var(--text-muted); font-size:.87rem; white-space:nowrap; }
 
 .pay-note{
@@ -628,13 +627,8 @@ footer{
   display:block; margin-top:3px;
   font-size:.79rem; font-weight:700; color:var(--blue);
 }
-.td-usd-adv{
-  display:block; margin-top:3px;
-  font-size:.76rem; font-weight:600; color:var(--text-dim);
-}
-
-/* La tabla ahora tiene 5 columnas: necesita mas ancho minimo */
-table{ min-width:820px; }
+/* La tabla tiene 4 columnas, una de ellas con el boton de pago */
+table{ min-width:700px; }
 
 /* ============================================================
    BOTON DE PAGO CON CRIPTO

@@ -16,9 +16,9 @@ Sitio web bilingüe de **Publigital**, agencia de videos publicitarios con intel
 |---|---|
 | **Hero** | Titular, propuesta de valor, aviso de cobertura global y llamados a la acción |
 | **Servicios** | Los 3 formatos de video: 30s, 60s y 90s, con precios en MXN y USD |
-| **Precios** | Tabla con precios, anticipo del 50% y botón de pago con cripto por plan |
+| **Precios** | Tabla con precios en MXN y USD, y botón de pago con cripto por plan |
 | **Video** | Video promocional en marco de teléfono (formato vertical 9:16) |
-| **Proceso** | Los 3 pasos: solicitud → anticipo → entrega en 2 días |
+| **Proceso** | Los 3 pasos: solicitud → vista previa con marca de agua → pago y entrega |
 | **Testimonios** | Espacio para reseñas de clientes de distintos países |
 | **Contacto** | WhatsApp y Telegram de Aurelio y Alejandro + cotizador + cobertura global |
 | **Footer** | Redes sociales, navegación, contacto y frase de marca |
@@ -62,18 +62,20 @@ Porque el sitio es bilingüe. Si los estilos vivieran dentro de cada HTML, habr�
 
 ## 💰 Precios vigentes
 
-| Formato | Precio | Anticipo (50%) | Entrega |
-|---|---|---|---|
-| Video 30 segundos | $250 MXN / **$15 USD** | $125 MXN / $7.50 USD | 2 días |
-| Video 60 segundos | $350 MXN / **$20 USD** | $175 MXN / $10 USD | 2 días |
-| Video 90 segundos | $400 MXN / **$25 USD** | $200 MXN / $12.50 USD | 2 días |
+| Formato | Precio | Entrega |
+|---|---|---|
+| Video 30 segundos | $250 MXN / **$15 USD** | 2 días |
+| Video 60 segundos | $350 MXN / **$20 USD** | 2 días |
+| Video 90 segundos | $400 MXN / **$25 USD** | 2 días |
+
+> 💡 **No hay anticipo.** Se paga cuando el cliente ya vio su video (ver el flujo de pago más abajo).
 
 Los precios aparecen en **cuatro lugares** que debes mantener sincronizados en cada archivo:
 
 1. La sección **Servicios** (`.svc-price`) — tres tarjetas
 2. La tabla de **Precios** (`<tbody>`) — tres filas
 3. El cotizador (`<select id="qFormato">`) — tres opciones
-4. El objeto **`PAGOS`** en el JavaScript — los enlaces de pago
+4. El objeto **`PAGOS`** en el JavaScript — los títulos de los modales de pago
 
 ---
 
@@ -117,17 +119,27 @@ const PAGOS = {
 
 > 🔁 Recuerda cambiar también `titulo` para que el modal muestre el precio correcto.
 
+### 🔄 El flujo de pago (vista previa con marca de agua)
+
+Este es el flujo acordado, y está escrito así en las dos versiones del sitio:
+
+1. **Se acuerda todo por WhatsApp o Telegram.** No se paga nada al inicio. Esto filtra curiosos y permite confirmar el brief antes de que el cliente pague.
+2. **Producimos el video** (2 días).
+3. **Se lo enviamos terminado, pero con marca de agua y en baja resolución.** El cliente ve exactamente lo que va a recibir.
+4. **El cliente paga** con el widget de USDT ($15, $20 o $25 USD según el formato).
+5. **Le enviamos el archivo final** en alta calidad y sin marca de agua.
+
+**¿Por qué así y no entregando el archivo limpio antes de cobrar?**
+Un video es un archivo digital: en cuanto se envía, el cliente ya lo tiene y no tiene incentivo para pagar. Como ahora atendemos a todo el mundo, reclamar a alguien en otro país no es viable. La vista previa con marca de agua le da al cliente la confianza de *"veo el producto terminado antes de pagar"* **sin regalar el trabajo**. Además genera urgencia por quitar la marca.
+
+> 📌 Si algún día quieres cambiar de modelo (por ejemplo volver al anticipo del 50%), hay que actualizar el texto en **los dos archivos** y quitar la columna de precios correspondiente.
+
 ### ⚠️ Dos cosas importantes
 
 **1. Nunca pongas tu API Key de NOWPayments en el HTML.**
 Este archivo es público: cualquiera puede abrir el código fuente y copiar la clave, y con ella generar cobros a tu nombre. La API Key solo se usa desde un **servidor** (por ejemplo una función serverless en Cloudflare Workers o Vercel). Los enlaces de pago alojados no necesitan clave.
 
-**2. Los widgets cobran el importe COMPLETO, no el anticipo.**
-Los enlaces que configuraste cobran **$15, $20 y $25 USD** (el precio total del video), mientras que el resto de la página anuncia un **anticipo del 50%** ($7.50, $10 y $12.50 USD). Para evitar confusión, el modal aclara: *"Este pago cubre el importe total del video."*
-
-Si lo que quieres es cobrar **solo el anticipo**, tienes dos opciones:
-- **Crear enlaces de pago por los anticipos** en NOWPayments ($7.50, $10 y $12.50 USD) y sustituir los tres `iid`.
-- **Cambiar el texto de la página** para que hable de pago completo en lugar de anticipo del 50%.
+**2. El pago se hace DESPUÉS de que el cliente ve su video.** Ver el flujo completo abajo.
 
 ---
 

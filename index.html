@@ -153,8 +153,12 @@
 
     <div class="hero-visual">
       <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-emblem">
-        <img src="logo.png" alt="Emblema de Publigital">
+      <div class="hero-video">
+        <video autoplay loop muted playsinline preload="auto" poster="poster.jpg"
+               aria-label="Video animado de presentacion de Publigital">
+          <source src="promo_publigital_web.mp4" type="video/mp4">
+          Tu navegador no soporta el elemento de video.
+        </video>
       </div>
 
       <div class="float-card fc-1">
@@ -941,6 +945,18 @@ form.addEventListener('submit', (evento) => {
 
   window.open(`https://wa.me/${agente.wa}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
 });
+
+/* ---------- Video del hero: respetar "movimiento reducido" ---------- */
+const heroVideo = document.querySelector('.hero-video video');
+if (heroVideo) {
+  const prefiereQuieto = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const ajustarHero = () => {
+    if (prefiereQuieto.matches) heroVideo.pause();
+    else heroVideo.play().catch(() => {});
+  };
+  ajustarHero();
+  prefiereQuieto.addEventListener('change', ajustarHero);
+}
 
 /* ---------- Pausar el video al salir de la pantalla ---------- */
 const video = document.querySelector('.phone-screen video');

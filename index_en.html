@@ -150,8 +150,12 @@
 
     <div class="hero-visual">
       <div class="hero-glow" aria-hidden="true"></div>
-      <div class="hero-emblem">
-        <img src="logo.png" alt="Publigital emblem">
+      <div class="hero-video">
+        <video autoplay loop muted playsinline preload="auto" poster="poster.jpg"
+               aria-label="Publigital animated presentation video">
+          <source src="promo_publigital_web.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
       </div>
 
       <div class="float-card fc-1">
@@ -922,6 +926,18 @@ form.addEventListener('submit', (evento) => {
 
   window.open(`https://wa.me/${agente.wa}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
 });
+
+/* ---------- Hero video: respect "reduced motion" ---------- */
+const heroVideo = document.querySelector('.hero-video video');
+if (heroVideo) {
+  const prefiereQuieto = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const ajustarHero = () => {
+    if (prefiereQuieto.matches) heroVideo.pause();
+    else heroVideo.play().catch(() => {});
+  };
+  ajustarHero();
+  prefiereQuieto.addEventListener('change', ajustarHero);
+}
 
 /* ---------- Pause the video when it leaves the viewport ---------- */
 const video = document.querySelector('.phone-screen video');

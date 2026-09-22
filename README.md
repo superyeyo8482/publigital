@@ -44,6 +44,10 @@ publigital/
 └── .gitignore
 ```
 
+> 📁 **Ubicación local del proyecto:** `C:\Proyectos\publigital`
+>
+> Está a propósito **fuera de `Documentos` y fuera de OneDrive**. Un repositorio git nunca debe vivir dentro de una carpeta sincronizada en la nube: OneDrive no entiende de git y puede crear copias en conflicto o dañar el historial. El respaldo correcto es GitHub, que ya lo tienes.
+
 ### ¿Por qué el CSS está en un archivo aparte?
 
 Porque el sitio es bilingüe. Si los estilos vivieran dentro de cada HTML, habría **dos copias** del mismo CSS y cualquier cambio de diseño habría que hacerlo dos veces (con riesgo de que las versiones se desincronicen). Con `styles.css` se edita **una sola vez** y afecta a los dos idiomas.
